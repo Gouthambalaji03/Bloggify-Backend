@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
     {
-        username: {
+        name: {
             type: String,
             required: [true, 'Please add a username'],
         },
@@ -26,7 +26,6 @@ const userSchema = mongoose.Schema(
         }
     },
 );
-
 
 const User = mongoose.model("User", userSchema);
 
